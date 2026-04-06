@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Medicine Delivery</h2>
+
+  <!-- Login Form -->
+  <div id="loginForm">
+    <h3>Login</h3>
+    <input type="text" id="loginUsername" placeholder="Username">
+    <input type="password" id="loginPassword" placeholder="Password">
+    <button onclick="login()">Login</button>
+    <p>Don't have an account? <span onclick="showRegister()">Register</span></p>
+  </div>
+
+  <!-- Register Form -->
+  <div id="registerForm" class="hidden">
+    <h3>Register</h3>   
+    <input type="text" id="regUsername" placeholder="Username">
+  <input type="text" id="regUsermobile" placeholder="Mobile Number" maxlength="10">
+    <input type="text" id="regUseremail" placeholder="Useremail">
+    <input type="password" id="regPassword" placeholder="Password">
+    <button onclick="register()">Register</button>
+    <p>Already have an account? <span onclick="showLogin()">Login</span></p>
+  </div>
+
+</div>
+
+<script src="medicine.js"></script>
+</body>
+</html>
